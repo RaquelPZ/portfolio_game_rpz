@@ -49,11 +49,13 @@ body {
         color: lightgrey;
     }
     .sun_body{
+        transition: 1s;
         background-color: aqua;
         nav{color: rgb(56, 74, 74);}
         footer{background-color: brown;}
     }
     .moon_body{
+        transition: 1s;
         background-color: rgb(7, 53, 97);
         article{background-color: rgb(31, 31, 31);}
         nav {color:aliceblue;}
