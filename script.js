@@ -74,3 +74,40 @@ function caminar(){
         }, 100);
     }
 }
+
+const skyAll = document.querySelector(".sky");
+let skyElement;
+let skyMove = 0;
+let skyMove2 = 1000;
+
+paintSky();
+for (let i = 1; i <= 1000; i++) {
+    setTimeout(() => {
+    paintSky();
+    }, i * 100);
+}
+
+
+function paintSky(){
+    skyMove = skyMove - 10;
+    skyMove2 = skyMove2 - 10;
+    skyElement =
+        `<div class="sky_day" style="left: ${skyMove}px;">
+            <div class="nube1 nube"><img src="nube.png" alt="img nube"></div>
+            <div class="nube2 nube"><img src="nube.png" alt="img nube"></div>
+            <div class="nube3 nube"><img src="nube.png" alt="img nube"></div>
+        </div>`;
+    skyElement2 =
+        `<div class="sky_day" style="left: ${skyMove2}px;">
+            <div class="nube1 nube"><img src="nube.png" alt="img nube"></div>
+            <div class="nube2 nube"><img src="nube.png" alt="img nube"></div>
+            <div class="nube3 nube"><img src="nube.png" alt="img nube"></div>
+        </div>`;
+    skyAll.innerHTML = skyElement + skyElement2;
+    if (skyMove === -1000) {
+    skyMove = 1000;
+    }
+    if (skyMove2 === -1000) {
+    skyMove2 = 1000;
+    }
+}
