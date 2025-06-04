@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+}
+
+#left {
+    background-color: grey;
+    border-right-style: solid;
+    border-color: rgb(67, 67, 67);
+    border-width: 5px;
+    width: 30%;
+    height: 100vh;
+}
+
+#right{
+    background-color: aqua;
+    width: 70%;
+    height: 100vh;
+}
+
+footer {
+    background-color: brown;
+    color: aliceblue;
+    position: absolute;
+    align-content: center;
+    border-top-style: solid;
+    /* border-right-style: solid;
+    border-left-style: solid; */
+    border-color: black;
+    border-width: 5px;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    p{font-size: 0.75em; letter-spacing: 2.5px;}
+}
